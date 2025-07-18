@@ -1,785 +1,788 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meron Degif | Design Portfolio</title>
-    <meta name="description" content="Meron Degif - Emerging designer showcasing innovative projects and skills">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                fontFamily: {
-                    sans: ['Inter', 'sans-serif'],
-                    serif: ['Playfair Display', 'serif'],
-                },
-                extend: {
-                    colors: {
-                        dark: '#0F0F0F',
-                        gold: '#D4AF37',
-                        platinum: '#E5E4E2',
-                        sapphire: '#0F52BA',
-                        emerald: '#50C878',
-                    },
-                    animation: {
-                        'glow': 'glow 3s ease-in-out infinite alternate',
-                        'float': 'float 6s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        glow: {
-                            '0%': { 'box-shadow': '0 0 5px rgba(212, 175, 55, 0.5)' },
-                            '100%': { 'box-shadow': '0 0 20px rgba(212, 175, 55, 0.8)' },
-                        },
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-20px)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style type="text/css">
-        .hero-gradient {
-            background: linear-gradient(to bottom, rgba(15,15,15,0.2) 0%, rgba(15,15,15,0.9) 100%);
-        }
-        .nav-transition {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .social-icon {
-            transition: all 0.3s ease-out;
-        }
-        .social-icon:hover {
-            transform: scale(1.2);
-            filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.6));
-        }
-        .glow-text {
-            text-shadow: 0 0 10px rgba(212, 175, 55, 0.7);
-        }
-        .skill-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px -5px rgba(212, 175, 55, 0.4);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meron Degif | Design Portfolio</title>
+  <meta name="description" content="Meron Degif - Emerging designer showcasing innovative projects and skills" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          sans: ["Inter", "sans-serif"],
+          serif: ["Playfair Display", "serif"],
+        },
+        extend: {
+          colors: {
+            dark: "#0F0F0F",
+            darker: "#0A0A0A",
+            gold: "#D4AF37",
+            'gold-light': "#E6C875",
+            'gold-dark': "#B38C25",
+            platinum: "#E5E4E2",
+            'platinum-dark': "#C0C0C0",
+            sapphire: "#0F52BA",
+            emerald: "#50C878",
+          },
+          animation: {
+            glow: "glow 3s ease-in-out infinite alternate",
+            float: "float 6s ease-in-out infinite",
+          },
+          keyframes: {
+            glow: {
+              "0%": { "box-shadow": "0 0 5px rgba(212, 175, 55, 0.5)" },
+              "100%": { "box-shadow": "0 0 20px rgba(212, 175, 55, 0.8)" },
+            },
+            float: {
+              "0%, 100%": { transform: "translateY(0)" },
+              "50%": { transform: "translateY(-20px)" },
+            },
+          },
+        },
+      },
+    };
+  </script>
+  
+  <style type="text/css">
+    .hero-gradient {
+      background: linear-gradient(to bottom, rgba(15, 15, 15, 0.2) 0%, rgba(15, 15, 15, 0.9) 100%);
+    }
+    .nav-transition {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .social-icon {
+      transition: all 0.3s ease-out;
+    }
+    .social-icon:hover {
+      transform: scale(1.2);
+      filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.6));
+    }
+    .glow-text {
+      text-shadow: 0 0 10px rgba(212, 175, 55, 0.7);
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(212, 175, 55, 0.4);
+    }
+    .project-card {
+      transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+    }
+  </style>
 </head>
+
 <body class="bg-dark font-sans text-platinum antialiased">
-    <!-- Navigation Bar -->
-    <header class="fixed w-full z-50 backdrop-blur-lg bg-dark/80 nav-transition border-b border-gold/20" data-aos="fade-down">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <a href="#" class="text-2xl font-serif font-semibold tracking-tight text-gold">Meron Degif</a>
-                <nav class="hidden md:block">
-                    <ul class="flex space-x-8">
-                        <li><a href="#home" class="hover:text-gold transition-colors">Home</a></li>
-                        <li><a href="#projects" class="hover:text-gold transition-colors">Projects</a></li>
-                        <li><a href="#skills" class="hover:text-gold transition-colors">Skills</a></li>
-                        <li><a href="#education" class="hover:text-gold transition-colors">Education</a></li>
-                        <li><a href="#testimonials" class="hover:text-gold transition-colors">Testimonials</a></li>
-                        <li><a href="#contact" class="hover:text-gold transition-colors">Contact</a></li>
-                    </ul>
-                </nav>
-                <button class="md:hidden text-xl text-gold">☰</button>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="h-screen relative overflow-hidden">
-        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center"></div>
-        <div class="absolute inset-0 hero-gradient"></div>
-        <div class="relative z-10 h-full flex flex-col justify-center items-center text-center px-6">
-            <h1 class="text-5xl md:text-7xl font-serif mb-6 text-gold glow-text" data-aos="fade-up" data-aos-delay="100">Meron Degif</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">Design Student | Innovative Thinker | Future Creator</p>
-            <div data-aos="fade-up" data-aos-delay="300">
-                <a href="#projects" class="inline-block px-8 py-3 border-2 border-gold text-gold hover:bg-gold/10 transition-all duration-300 relative overflow-hidden group">
-                    <span class="relative z-10">View My Work</span>
-                    <span class="absolute inset-0 bg-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
-                </a>
-            </div>
-            <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce" data-aos="fade-up" data-aos-delay="400">
-                <svg width="30" height="50" viewBox="0 0 30 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-gold">
-                    <rect x="12" y="12" width="6" height="18" fill="currentColor"/>
-                    <path d="M15 40L3 28M15 40L27 28" stroke="currentColor" stroke-width="3"/>
-                </svg>
-            </div>
-        </div>
-    </section>
-     
-    <!-- About Section -->
-<section id="about" class="py-24 bg-gradient-to-b from-dark to-gray-900">
-    <div class="container mx-auto px-6">
-        <div class="flex flex-col lg:flex-row items-center gap-12">
-            <!-- Image Column -->
-            <div class="lg:w-1/3" data-aos="fade-right">
-                <div class="relative group">
-                    <!-- Main Profile Image -->
-                    <div class="aspect-square overflow-hidden rounded-lg border-2 border-gold/30 relative z-10 transform group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-500">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1976&q=80" 
-                             alt="Alex Carter - Architectural Designer" 
-                             class="w-full h-full object-cover">
-                    </div>
-                    <!-- Decorative Frame Elements -->
-                    <div class="absolute -bottom-4 -right-4 w-full h-full border-2 border-gold/20 rounded-lg group-hover:border-gold/50 transition-all duration-500"></div>
-                    <div class="absolute -bottom-8 -right-8 w-full h-full border border-gold/10 rounded-lg group-hover:border-gold/30 transition-all duration-700"></div>
-                    
-                 <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-    <span class="px-6 py-2 border border-gold text-gold bg-dark/90 hover:bg-gold hover:text-dark transition-all">View Details</span>
-</div>
-                </div>
-            </div>
-            
-            <!-- Content Column -->
-            <div class="lg:w-2/3" data-aos="fade-left">
-                <h2 class="text-3xl md:text-4xl font-serif text-gold mb-6">About Me</h2>
-                <p class="text-xl font-serif text-platinum mb-8">Designing spaces that inspire and endure.</p>
-                
-                <div class="prose prose-invert max-w-none">
-                    <p class="text-platinum/90 mb-6 leading-relaxed">
-                        I'm Alex Carter, an emerging architectural designer with a passion for creating spaces that 
-                        harmonize aesthetics, functionality, and sustainability. My approach combines rigorous 
-                        technical knowledge with creative problem-solving to deliver designs that stand the test of time.
-                    </p>
-                    
-                    <p class="text-platinum/90 mb-6 leading-relaxed">
-                        Currently completing my Master of Architecture at the University of Design Excellence, 
-                        I've developed a distinctive design philosophy that values context, materiality, and 
-                        human experience equally. My work has been recognized with multiple awards, including 
-                        the prestigious AIA Student Honor Award.
-                    </p>
-                    
-                    <div class="grid md:grid-cols-2 gap-6 mb-8">
-                        <div class="border-l-2 border-gold pl-4">
-                            <h4 class="font-serif text-gold mb-2">Design Philosophy</h4>
-                            <p class="text-platinum/80">
-                                I believe architecture should serve both practical needs and elevate the human spirit, 
-                                creating spaces that are as functional as they are inspiring.
-                            </p>
-                        </div>
-                        <div class="border-l-2 border-gold pl-4">
-                            <h4 class="font-serif text-gold mb-2">Technical Expertise</h4>
-                            <p class="text-platinum/80">
-                                Proficient in BIM modeling, sustainable design principles, and construction 
-                                documentation with a focus on detail-oriented execution.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#projects" class="px-6 py-3 bg-gold text-dark hover:bg-gold/80 transition-colors font-medium">
-                            View My Work
-                        </a>
-                        <a href="#contact" class="px-6 py-3 border border-gold text-gold hover:bg-gold/10 transition-colors">
-                            Get In Touch
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!-- Navigation Bar -->
+  <header class="fixed w-full z-50 backdrop-blur-lg bg-dark/90 nav-transition border-b border-gold/20" data-aos="fade-down">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <a href="#" class="text-2xl font-serif font-semibold tracking-tight text-gold">Meron Degif</a>
+        <nav class="hidden md:block">
+          <ul class="flex space-x-8">
+            <li><a href="#home" class="hover:text-gold transition-colors">Home</a></li>
+            <li><a href="#projects" class="hover:text-gold transition-colors">Projects</a></li>
+            <li><a href="#skills" class="hover:text-gold transition-colors">Skills</a></li>
+            <li><a href="#education" class="hover:text-gold transition-colors">Education</a></li>
+            <li><a href="#testimonials" class="hover:text-gold transition-colors">Testimonials</a></li>
+            <li><a href="#contact" class="hover:text-gold transition-colors">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="md:hidden text-xl text-gold">☰</button>
+      </div>
     </div>
-</section>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen relative overflow-hidden">
+    <div class="absolute inset-0 bg-[url('./images/h1.jpg')] bg-cover bg-center"></div>
+    <div class="absolute inset-0 hero-gradient"></div>
+    <div class="relative z-10 h-full flex flex-col justify-center items-center text-center px-6">
+      <h1 class="text-5xl md:text-7xl font-serif mb-6 text-gold glow-text" data-aos="fade-up" data-aos-delay="100">
+        Meron Degif
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+        Design Student | Innovative Thinker | Future Creator
+      </p>
+      <div data-aos="fade-up" data-aos-delay="300">
+        <a href="#projects" class="inline-block px-8 py-3 border-2 border-gold text-gold hover:bg-gold/10 transition-all duration-300 relative overflow-hidden group">
+          <span class="relative z-10">View My Work</span>
+          <span class="absolute inset-0 bg-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+        </a>
+      </div>
+      <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce" data-aos="fade-up" data-aos-delay="400">
+        <svg width="30" height="50" viewBox="0 0 30 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-gold">
+          <rect x="12" y="12" width="6" height="18" fill="currentColor" />
+          <path d="M15 40L3 28M15 40L27 28" stroke="currentColor" stroke-width="3" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-24 bg-gradient-to-b from-dark to-darker">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <!-- Image Column -->
+        <div class="lg:w-1/3" data-aos="fade-right">
+          <div class="relative group">
+            <!-- Main Profile Image -->
+            <div class="aspect-square overflow-hidden rounded-lg border-2 border-gold/30 relative z-10 transform group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-500">
+              <img src="./images/image.png" alt="Meron Degefu - Drafting Technology Student" class="w-full h-full object-cover" />
+            </div>
+            <!-- Decorative Frame Elements -->
+            <div class="absolute -bottom-4 -right-4 w-full h-full border-2 border-gold/20 rounded-lg group-hover:border-gold/50 transition-all duration-500"></div>
+            <div class="absolute -bottom-8 -right-8 w-full h-full border border-gold/10 rounded-lg group-hover:border-gold/30 transition-all duration-700"></div>
+          </div>
+        </div>
+
+        <!-- Content Column -->
+        <div class="lg:w-2/3" data-aos="fade-left">
+          <h2 class="text-3xl md:text-4xl font-serif text-gold mb-6">About Me</h2>
+          <p class="text-xl font-serif text-platinum mb-8">From classroom precision to real-world vision.</p>
+
+          <div class="prose prose-invert max-w-none">
+            <p class="text-platinum/90 mb-6 leading-relaxed">
+              Hello, I'm Meron Degefu — a Level III student in the Drafting Technology Department at General Wingate Polytechnic College.
+              With over <strong>900 hours of training</strong> in engineering drawing, 3D modeling, and CAD software, I've developed strong
+              technical skills and a deep appreciation for detail and accuracy in design.
+            </p>
+
+            <p class="text-platinum/90 mb-6 leading-relaxed">
+              As I look forward to transitioning into an apprenticeship role, I'm eager to apply my knowledge in a professional environment,
+              contribute to real-world projects, and continue refining my craft alongside experienced professionals.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+              <div class="border-l-2 border-gold pl-4">
+                <h4 class="font-serif text-gold mb-2">Design Approach</h4>
+                <p class="text-platinum/80">
+                  I believe great design stems from precision, clarity, and purpose. My goal is to produce technical drawings and models
+                  that support innovation while remaining grounded in practicality.
+                </p>
+              </div>
+              <div class="border-l-2 border-gold pl-4">
+                <h4 class="font-serif text-gold mb-2">Technical Skills</h4>
+                <p class="text-platinum/80">
+                  Proficient in AutoCAD, engineering drawing, 3D modeling tools, and interpreting construction documents with a focus
+                  on technical clarity and execution.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-4">
+              <a href="#projects" class="px-6 py-3 bg-gold text-dark hover:bg-gold-light transition-colors font-medium">
+                View My Work
+              </a>
+              <a href="#contact" class="px-6 py-3 border border-gold text-gold hover:bg-gold/10 transition-colors">
+                Get In Touch
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Projects Section -->
-<section id="projects" class="py-24">
+  <section id="projects" class="py-24 bg-gray-900/10">
     <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-serif text-center mb-4 text-gold" data-aos="fade-up">My Projects</h2>
-        <p class="text-center mb-16 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">A collection of my academic and professional design work</p>
-        
-        <!-- Projects Grid -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Project 1 -->
-            <div class="group relative overflow-hidden rounded-lg cursor-pointer" 
-                 data-aos="fade-up" 
-                 data-aos-delay="200"
-                 onclick="openModal('Urban Renewal Concept', 'https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80', 'Sustainable city redesign project focused on green spaces and community integration. Developed during my senior year at University of Design Excellence.', 'Urban Design, Sustainability', '2023')">
-                <div class="aspect-[4/3] bg-gray-800 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" 
-                         alt="Urban Renewal Project" 
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent opacity-90"></div>
-                <div class="absolute bottom-0 left-0 p-6 w-full">
-                    <h3 class="text-xl font-serif text-gold mb-2">Urban Renewal Concept</h3>
-                    <p class="text-platinum/80">Sustainable city redesign | 2023</p>
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <span class="text-xs px-2 py-1 bg-sapphire/30 text-sapphire rounded-full">Urban Design</span>
-                        <span class="text-xs px-2 py-1 bg-emerald/30 text-emerald rounded-full">Sustainability</span>
-                    </div>
-                </div>
-                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span class="px-6 py-2 border border-gold text-gold bg-dark/90 hover:bg-gold hover:text-dark transition-all">View Details</span>
-                </div>
+      <h2 class="text-3xl md:text-4xl font-serif text-center mb-4 text-gold" data-aos="fade-up">
+        My Projects
+      </h2>
+      <p class="text-center mb-16 max-w-2xl mx-auto text-platinum/80" data-aos="fade-up" data-aos-delay="100">
+        A collection of my academic and professional design work
+      </p>
+
+      <!-- Projects Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="group relative overflow-hidden rounded-lg cursor-pointer project-card" 
+             data-aos="fade-up" data-aos-delay="200"
+             onclick="openModal('Working Drawing (CAD)', './images/p1.png', `This project focuses on producing architectural working drawings using AutoCAD.
+.It includes site plan, floor plan, elevations, and sections for construction use.
+.The drawings provide detailed guidance for builders and engineers.
+.Helps ensure accuracy, material planning, and proper execution on-site.
+.It is essential for project approval and on-site implementation.`, 'Design, Sustainability', '2024')">
+          <div class="aspect-[4/3] bg-gray-800 overflow-hidden">
+            <img src="./images/p1.png" alt="Working Drawing" 
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/90 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6 w-full">
+            <h3 class="text-xl font-serif text-gold mb-2">Working Drawing (CAD)</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs px-3 py-1 bg-gold/10 text-gold rounded-full border border-gold/20">Design</span>
+              <span class="text-xs px-3 py-1 bg-emerald/10 text-emerald-400 rounded-full border border-emerald/20">Sustainability</span>
             </div>
-            
-            <!-- Project 2 -->
-            <div class="group relative overflow-hidden rounded-lg cursor-pointer" 
-                 data-aos="fade-up" 
-                 data-aos-delay="250"
-                 onclick="openModal('Lakeside Residence', 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80', 'Private residence design blending modern architecture with natural surroundings. Features passive solar design and local materials.', 'Residential, Eco Design', '2023')">
-                <div class="aspect-[4/3] bg-gray-800 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" 
-                         alt="Coastal Retreat" 
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent opacity-90"></div>
-                <div class="absolute bottom-0 left-0 p-6 w-full">
-                    <h3 class="text-xl font-serif text-gold mb-2">Lakeside Residence</h3>
-                    <p class="text-platinum/80">Private home design | 2023</p>
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <span class="text-xs px-2 py-1 bg-gold/30 text-gold rounded-full">Residential</span>
-                        <span class="text-xs px-2 py-1 bg-emerald/30 text-emerald rounded-full">Eco Design</span>
-                    </div>
-                </div>
-                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span class="px-6 py-2 border border-gold text-gold bg-dark/90 hover:bg-gold hover:text-dark transition-all">View Details</span>
-                </div>
-            </div>
-            
-            <!-- Project 3 -->
-            <div class="group relative overflow-hidden rounded-lg cursor-pointer" 
-                 data-aos="fade-up" 
-                 data-aos-delay="300"
-                 onclick="openModal('Contemporary Art Museum', 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80', 'Conceptual design for a modern art museum featuring flexible exhibition spaces and innovative lighting solutions.', 'Cultural, Conceptual', '2022')">
-                <div class="aspect-[4/3] bg-gray-800 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                         alt="Museum Design" 
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent opacity-90"></div>
-                <div class="absolute bottom-0 left-0 p-6 w-full">
-                    <h3 class="text-xl font-serif text-gold mb-2">Contemporary Art Museum</h3>
-                    <p class="text-platinum/80">Cultural space | 2022</p>
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <span class="text-xs px-2 py-1 bg-sapphire/30 text-sapphire rounded-full">Cultural</span>
-                        <span class="text-xs px-2 py-1 bg-gold/30 text-gold rounded-full">Conceptual</span>
-                    </div>
-                </div>
-                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span class="px-6 py-2 border border-gold text-gold bg-dark/90 hover:bg-gold hover:text-dark transition-all">View Details</span>
-                </div>
-            </div>
-            
-            <!-- Project 4 -->
-            <div class="group relative overflow-hidden rounded-lg cursor-pointer" 
-                 data-aos="fade-up" 
-                 data-aos-delay="350"
-                 onclick="openModal('Modular Housing System', 'https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80', 'Prefabricated housing solution for urban environments with customizable floor plans and sustainable materials.', 'Urban, Modular', '2023')">
-                <div class="aspect-[4/3] bg-gray-800 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                         alt="Modular Housing" 
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent opacity-90"></div>
-                <div class="absolute bottom-0 left-0 p-6 w-full">
-                    <h3 class="text-xl font-serif text-gold mb-2">Modular Housing System</h3>
-                    <p class="text-platinum/80">Urban solution | 2023</p>
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <span class="text-xs px-2 py-1 bg-sapphire/30 text-sapphire rounded-full">Urban</span>
-                        <span class="text-xs px-2 py-1 bg-emerald/30 text-emerald rounded-full">Modular</span>
-                    </div>
-                </div>
-                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span class="px-6 py-2 border border-gold text-gold bg-dark/90 hover:bg-gold hover:text-dark transition-all">View Details</span>
-                </div>
-            </div>
-            
-            <!-- Project 5 -->
-            <div class="group relative overflow-hidden rounded-lg cursor-pointer" 
-                 data-aos="fade-up" 
-                 data-aos-delay="400"
-                 onclick="openModal('Public Park Redesign', 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80', 'Community park redesign emphasizing accessibility and native landscaping. Won 2nd place in student competition.', 'Landscape, Public Space', '2022')">
-                <div class="aspect-[4/3] bg-gray-800 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" 
-                         alt="Park Redesign" 
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent opacity-90"></div>
-                <div class="absolute bottom-0 left-0 p-6 w-full">
-                    <h3 class="text-xl font-serif text-gold mb-2">Public Park Redesign</h3>
-                    <p class="text-platinum/80">Community space | 2022</p>
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <span class="text-xs px-2 py-1 bg-emerald/30 text-emerald rounded-full">Landscape</span>
-                        <span class="text-xs px-2 py-1 bg-sapphire/30 text-sapphire rounded-full">Public Space</span>
-                    </div>
-                </div>
-                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span class="px-6 py-2 border border-gold text-gold bg-dark/90 hover:bg-gold hover:text-dark transition-all">View Details</span>
-                </div>
-            </div>
-            
-            <!-- Project 6 -->
-            <div class="group relative overflow-hidden rounded-lg cursor-pointer" 
-                 data-aos="fade-up" 
-                 data-aos-delay="450"
-                 onclick="openModal('Retail Space Concept', 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80', 'Innovative retail environment blending shopping and experience zones. Developed during internship at Studio Moderna.', 'Commercial, Interior', '2023')">
-                <div class="aspect-[4/3] bg-gray-800 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" 
-                         alt="Retail Space" 
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent opacity-90"></div>
-                <div class="absolute bottom-0 left-0 p-6 w-full">
-                    <h3 class="text-xl font-serif text-gold mb-2">Retail Space Concept</h3>
-                    <p class="text-platinum/80">Commercial design | 2023</p>
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <span class="text-xs px-2 py-1 bg-gold/30 text-gold rounded-full">Commercial</span>
-                        <span class="text-xs px-2 py-1 bg-sapphire/30 text-sapphire rounded-full">Interior</span>
-                    </div>
-                </div>
-                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span class="px-6 py-2 border border-gold text-gold bg-dark/90 hover:bg-gold hover:text-dark transition-all">View Details</span>
-                </div>
-            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="px-6 py-2 border border-gold text-gold bg-dark/90 hover:bg-gold hover:text-dark transition-all">View Details</span>
+          </div>
         </div>
+
+        <!-- Project 2 -->
+        <div class="group relative overflow-hidden rounded-lg cursor-pointer project-card" 
+             data-aos="fade-up" data-aos-delay="250"
+             onclick="openModal('Produce Detail Engineering Drawing', './images/p2.png',`This project focuses on producing detailed machine part drawings.
+.It includes exploded views, dimensions, and assembly layouts.
+.Used for accurate manufacturing, machining, and inspection.
+.The drawings ensure each component fits and functions properly.
+.Prepared for educational and practical mechanical design use.`, 'Drafting, Engineering', '2024')">
+          <div class="aspect-[4/3] bg-gray-800 overflow-hidden">
+            <img src="./images/p2.png" alt="Engineering Drawing" 
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/90 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6 w-full">
+            <h3 class="text-xl font-serif text-gold mb-2">Produce Detail Engineering Drawing</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs px-3 py-1 bg-sapphire/10 text-sapphire-400 rounded-full border border-sapphire/20">Drafting</span>
+              <span class="text-xs px-3 py-1 bg-amber-500/10 text-amber-400 rounded-full border border-amber-500/20">Engineering</span>
+            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="px-6 py-2 border border-gold text-gold bg-dark/90 hover:bg-gold hover:text-dark transition-all">View Details</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="group relative overflow-hidden rounded-lg cursor-pointer project-card" 
+             data-aos="fade-up" data-aos-delay="300"
+             onclick="openModal('Monumental Design for General Wingate Polytechnic College','./images/P3.png',`This monument reflects knowledge, innovation, and technical excellence.
+.The flame symbolizes enlightenment, while the gear represents industrial progress.
+.The octagonal base signifies harmony, growth, and a strong educational foundation.`,'Concept, Design','2024')">
+          <div class="aspect-[4/3] bg-gray-800 overflow-hidden">
+            <img src="./images/P3.png" alt="Monument Design" 
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/90 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6 w-full">
+            <h3 class="text-xl font-serif text-gold mb-2">Monumental Design for General Wingate Polytechnic College</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full border border-purple-500/20">Concept</span>
+              <span class="text-xs px-3 py-1 bg-gold/10 text-gold rounded-full border border-gold/20">Design</span>
+            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="px-6 py-2 border border-gold text-gold bg-dark/90 hover:bg-gold hover:text-dark transition-all">View Details</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="group relative overflow-hidden rounded-lg cursor-pointer project-card" 
+             data-aos="fade-up" data-aos-delay="350"
+             onclick="openModal('Ethiopian National Museum Logo Design', './images/p4.png', `This monument reflects knowledge, innovation, and technical excellence.
+.The flame symbolizes enlightenment, while the gear represents industrial progress.
+.The octagonal base signifies harmony, growth, and a strong educational foundation.`, 'Branding, Logo', '2024')">
+          <div class="aspect-[4/3] bg-gray-800 overflow-hidden">
+            <img src="./images/p4.png" alt="Museum Logo" 
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/90 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6 w-full">
+            <h3 class="text-xl font-serif text-gold mb-2">Ethiopian National Museum Logo Design</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs px-3 py-1 bg-red-500/10 text-red-400 rounded-full border border-red-500/20">Ethiopia</span>
+              <span class="text-xs px-3 py-1 bg-emerald/10 text-emerald-400 rounded-full border border-emerald/20">Logo</span>
+            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="px-6 py-2 border border-gold text-gold bg-dark/90 hover:bg-gold hover:text-dark transition-all">View Details</span>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="group relative overflow-hidden rounded-lg cursor-pointer project-card" 
+             data-aos="fade-up" data-aos-delay="400"
+             onclick="openModal('Design Elements & Principles', './images/p5.png',`This project focuses on the use of lines to show depth and perspective.
+.It applies the one-point perspective technique for visual accuracy.
+.Design elements like space, form, and shape are also included.
+.Principles such as balance, alignment, and emphasis guide the layout.
+.It helps understand how lines organize and direct visual flow`,'Education, Principles','2024')">
+          <div class="aspect-[4/3] bg-gray-800 overflow-hidden">
+            <img src="./images/p5.png" alt="Design Principles" 
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/90 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6 w-full">
+            <h3 class="text-xl font-serif text-gold mb-2">Design Elements & Principles</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20">Education</span>
+              <span class="text-xs px-3 py-1 bg-indigo-500/10 text-indigo-400 rounded-full border border-indigo-500/20">Principles</span>
+            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="px-6 py-2 border border-gold text-gold bg-dark/90 hover:bg-gold hover:text-dark transition-all">View Details</span>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="group relative overflow-hidden rounded-lg cursor-pointer project-card" 
+             data-aos="fade-up" data-aos-delay="450"
+             onclick="openModal('As-Built Drawing Description', './images/p6.png', `This drawing shows the actual building layout after construction.
+.It includes all on-site changes from the original plan.
+.Details like walls, doors, and rooms are shown as built.
+.Useful for maintenance, renovation, and future planning.
+.Prepared by a professional team for accurate documentation.`, 'Documentation, Construction', '2024')">
+          <div class="aspect-[4/3] bg-gray-800 overflow-hidden">
+            <img src="./images/p6.png" alt="As-Built Drawing" 
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/90 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6 w-full">
+            <h3 class="text-xl font-serif text-gold mb-2">As-Built Drawing Description</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs px-3 py-1 bg-gray-500/10 text-gray-400 rounded-full border border-gray-500/20">Documentation</span>
+              <span class="text-xs px-3 py-1 bg-amber-500/10 text-amber-400 rounded-full border border-amber-500/20">Construction</span>
+            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="px-6 py-2 border border-gold text-gold bg-dark/90 hover:bg-gold hover:text-dark transition-all">View Details</span>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="group relative overflow-hidden rounded-lg cursor-pointer project-card" 
+             data-aos="fade-up" data-aos-delay="500"
+             onclick="openModal('Working Drawing', './images/p7.png', `This project focuses on producing detailed architectural section drawings.
+.It shows construction elements like foundation, walls, roof, and dimensions for accurate building execution`, 'Architecture, Technical', '2024')">
+          <div class="aspect-[4/3] bg-gray-800 overflow-hidden">
+            <img src="./images/p7.png" alt="Architectural Drawing" 
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-dark/90 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6 w-full">
+            <h3 class="text-xl font-serif text-gold mb-2">Working Drawing</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs px-3 py-1 bg-sapphire/10 text-sapphire-400 rounded-full border border-sapphire/20">Architecture</span>
+              <span class="text-xs px-3 py-1 bg-gray-500/10 text-gray-400 rounded-full border border-gray-500/20">Technical</span>
+            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="px-6 py-2 border border-gold text-gold bg-dark/90 hover:bg-gold hover:text-dark transition-all">View Details</span>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Project Modal -->
-<div id="projectModal" class="fixed inset-0 z-50 hidden overflow-y-auto">
-    <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-        <!-- Background overlay -->
-        <div class="fixed inset-0 transition-opacity" aria-hidden="true" onclick="closeModal()">
-            <div class="absolute inset-0 bg-dark/95 backdrop-blur-sm"></div>
-        </div>
-        
-        <!-- Modal content -->
-        <div class="inline-block align-bottom bg-dark rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-4xl sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-            <div class="bg-dark px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                <div class="sm:flex sm:items-start">
-                    <div class="mt-3 text-center sm:mt-0 sm:text-left w-full">
-                        <div class="flex justify-between items-start">
-                            <h3 class="text-2xl leading-6 font-serif text-gold mb-4" id="modalTitle">Project Title</h3>
-                            <button onclick="closeModal()" class="text-gray-400 hover:text-gold transition-colors">
-                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div class="aspect-[4/3] bg-gray-800 rounded-lg overflow-hidden">
-                                <img id="modalImage" src="" alt="Project Image" class="w-full h-full object-cover">
-                            </div>
-                            <div>
-                                <p class="text-platinum mb-4" id="modalDescription">Project description will appear here.</p>
-                                <div class="mb-4">
-                                    <h4 class="font-serif text-gold mb-2">Project Details</h4>
-                                    <div class="flex items-center text-platinum/80 mb-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
-                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                            <line x1="16" y1="2" x2="16" y2="6"></line>
-                                            <line x1="8" y1="2" x2="8" y2="6"></line>
-                                            <line x1="3" y1="10" x2="21" y2="10"></line>
-                                        </svg>
-                                        <span id="modalYear">2023</span>
-                                    </div>
-                                    <div class="mb-4">
-                                        <h4 class="font-serif text-gold mb-2">Tags</h4>
-                                        <div class="flex flex-wrap gap-2" id="modalTags">
-                                            <!-- Tags will be inserted here -->
-                                        </div>
-                                    </div>
-                                    <div class="flex space-x-4 pt-4 border-t border-gold/20">
-                                        <a href="#" class="flex items-center text-gold hover:text-gold/80 transition-colors text-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
-                                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                                <polyline points="7 10 12 15 17 10"></polyline>
-                                                <line x1="12" y1="15" x2="12" y2="3"></line>
-                                            </svg>
-                                            Download Case Study (PDF)
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- Project Modal -->
+  <div id="projectModal" class="fixed inset-0 z-50 hidden overflow-y-auto">
+    <div class="flex items-center justify-center min-h-screen p-4 text-center">
+      <!-- Background overlay -->
+      <div class="fixed inset-0 bg-dark/95 backdrop-blur-sm" aria-hidden="true" onclick="closeModal()"></div>
+
+      <!-- Modal content -->
+      <div class="relative inline-block w-full max-w-7xl my-8 align-middle rounded-lg text-left overflow-hidden shadow-xl transform transition-all">
+        <div class="bg-dark p-8 sm:p-10">
+          <!-- Header with close button -->
+          <div class="flex justify-between items-start mb-8">
+            <h3 class="text-4xl sm:text-5xl font-serif text-gold" id="modalTitle">Project Title</h3>
+            <button onclick="closeModal()" class="text-gray-400 hover:text-gold transition-colors focus:outline-none">
+              <svg class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+          
+          <!-- Main content grid -->
+          <div class="grid xl:grid-cols-2 gap-10">
+            <!-- Image section -->
+            <div class="aspect-[16/9] bg-gray-800 rounded-xl overflow-hidden">
+              <img id="modalImage" src="" alt="Project Image" class="w-full h-full object-cover">
             </div>
+            
+            <!-- Text content -->
+            <div class="flex flex-col">
+              <p class="text-platinum text-xl mb-8" id="modalDescription">
+                Project description will appear here.
+              </p>
+              
+              <!-- Project details -->
+              <div class="space-y-6">
+                <div>
+                  <h4 class="font-serif text-2xl text-gold mb-4">Project Details</h4>
+                  <div class="flex items-center text-platinum/80 text-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <span id="modalYear">2024</span>
+                  </div>
+                </div>
+                
+                <!-- Tags section -->
+                <div>
+                  <h4 class="font-serif text-2xl text-gold mb-4">Tags</h4>
+                  <div class="flex flex-wrap gap-3" id="modalTags">
+                    <!-- Tags will be inserted here -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 
-
-
-
-
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-24 bg-gradient-to-br from-dark to-gray-900">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-serif text-center mb-4 text-gold" data-aos="fade-up">Technical Skills</h2>
-            <p class="text-center mb-16 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Tools and methodologies I've mastered through academic projects and personal study</p>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="skill-card bg-gray-900 p-6 rounded-lg border border-gold/20 hover:border-gold/50 transition-all" data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-gold text-3xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-serif mb-2">3D Modeling</h3>
-                    <p class="text-platinum/80">Rhino, SketchUp, Blender with advanced rendering in V-Ray and Lumion</p>
-                </div>
-                
-                <div class="skill-card bg-gray-900 p-6 rounded-lg border border-gold/20 hover:border-gold/50 transition-all" data-aos="fade-up" data-aos-delay="300">
-                    <div class="text-gold text-3xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-serif mb-2">CAD/BIM</h3>
-                    <p class="text-platinum/80">AutoCAD, Revit, ArchiCAD with construction documentation expertise</p>
-                </div>
-                
-                <div class="skill-card bg-gray-900 p-6 rounded-lg border border-gold/20 hover:border-gold/50 transition-all" data-aos="fade-up" data-aos-delay="400">
-                    <div class="text-gold text-3xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-serif mb-2">Visualization</h3>
-                    <p class="text-platinum/80">Photoshop, Illustrator, InDesign for professional presentation graphics</p>
-                </div>
-                
-                <div class="skill-card bg-gray-900 p-6 rounded-lg border border-gold/20 hover:border-gold/50 transition-all" data-aos="fade-up" data-aos-delay="500">
-                    <div class="text-gold text-3xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-                            <line x1="12" y1="17" x2="12" y2="17"></line>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-serif mb-2">Sustainable Design</h3>
-                    <p class="text-platinum/80">LEED principles, passive design strategies, and environmental analysis</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="py-24">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-serif text-center mb-4 text-gold" data-aos="fade-up">Education & Achievements</h2>
-            <p class="text-center mb-16 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">My academic journey and notable accomplishments</p>
-            
-            <div class="max-w-3xl mx-auto">
-                <div class="relative">
-                    <!-- Timeline line -->
-                    <div class="absolute left-4 h-full w-0.5 bg-gold/30 top-0" data-aos="fade-up"></div>
-                    
-                    <!-- Timeline item 1 -->
-                    <div class="mb-12 pl-12 relative" data-aos="fade-up" data-aos-delay="200">
-                        <div class="absolute left-0 w-8 h-8 rounded-full bg-gold border-4 border-dark flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-serif mb-2 text-gold">Bachelor of Architecture</h3>
-                        <p class="font-medium mb-1">University of Design Excellence | 2020-2024</p>
-                        <p class="text-platinum/80 mb-2">GPA: 3.8/4.0 | Dean's List all semesters</p>
-                        <ul class="list-disc pl-5 text-platinum/80">
-                            <li>Senior Thesis Award recipient</li>
-                            <li>President of Architecture Student Association</li>
-                            <li>Study abroad program in Barcelona</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Timeline item 2 -->
-                    <div class="mb-12 pl-12 relative" data-aos="fade-up" data-aos-delay="300">
-                        <div class="absolute left-0 w-8 h-8 rounded-full bg-gold border-4 border-dark flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-serif mb-2 text-gold">Design Competition Winner</h3>
-                        <p class="font-medium mb-1">International Student Design Challenge | 2023</p>
-                        <p class="text-platinum/80 mb-2">First place among 142 entries worldwide</p>
-                        <ul class="list-disc pl-5 text-platinum/80">
-                            <li>Innovative urban intervention concept</li>
-                            <li>Featured in Design Quarterly magazine</li>
-                            <li>Invited to present at Global Design Forum</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Timeline item 3 -->
-                    <div class="pl-12 relative" data-aos="fade-up" data-aos-delay="400">
-                        <div class="absolute left-0 w-8 h-8 rounded-full bg-gold border-4 border-dark flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="8.5" cy="7" r="4"></circle>
-                                <line x1="20" y1="8" x2="20" y2="14"></line>
-                                <line x1="23" y1="11" x2="17" y2="11"></line>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-serif mb-2 text-gold">Summer Internship</h3>
-                        <p class="font-medium mb-1">Studio Moderna Architects | Summer 2023</p>
-                        <p class="text-platinum/80 mb-2">Worked under lead designer on commercial projects</p>
-                        <ul class="list-disc pl-5 text-platinum/80">
-                            <li>Contributed to competition-winning entry</li>
-                            <li>Developed 3D visualization skills</li>
-                            <li>Received outstanding intern recognition</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-24 bg-gradient-to-br from-gray-900 to-dark">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-serif text-center mb-4 text-gold" data-aos="fade-up">Testimonials</h2>
-            <p class="text-center mb-16 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">What professors and mentors say about my work</p>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-gray-900 p-8 rounded-lg border border-gold/20" data-aos="fade-up" data-aos-delay="200">
-                    <div class="flex items-start mb-6">
-                        <div class="w-14 h-14 rounded-full overflow-hidden mr-4 border-2 border-gold">
-                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Professor James Wilson" class="w-full h-full object-cover">
-                        </div>
-                        <div>
-                            <h4 class="font-serif text-lg">Prof. James Wilson</h4>
-                            <p class="text-sm text-gold">Thesis Advisor</p>
-                        </div>
-                    </div>
-                    <p class="italic mb-6">"Alex demonstrates exceptional conceptual thinking and technical skills rare for a student at this level. His urban renewal project showed remarkable sensitivity to community needs while pushing design boundaries."</p>
-                    <div class="flex text-gold">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                        </svg>
-                    </div>
-                </div>
-                
-                <div class="bg-gray-900 p-8 rounded-lg border border-gold/20" data-aos="fade-up" data-aos-delay="300">
-                    <div class="flex items-start mb-6">
-                        <div class="w-14 h-14 rounded-full overflow-hidden mr-4 border-2 border-gold">
-                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sarah Chen" class="w-full h-full object-cover">
-                        </div>
-                        <div>
-                            <h4 class="font-serif text-lg">Sarah Chen</h4>
-                            <p class="text-sm text-gold">Lead Architect, Studio Moderna</p>
-                        </div>
-                    </div>
-                    <p class="italic mb-6">"During his internship, Alex quickly became an invaluable team member. His ability to translate conceptual ideas into detailed 3D models was impressive, and his design sensibility is remarkably mature for his age."</p>
-                    <div class="flex text-gold">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-24">
-        <div class="container mx-auto px-6 max-w-2xl">
-            <h2 class="text-3xl md:text-4xl font-serif text-center mb-4 text-gold" data-aos="fade-up">Let's Connect</h2>
-            <p class="text-center mb-16 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Available for internships, collaborations, and design opportunities</p>
-            
-            <form class="space-y-6" data-aos="fade-up" data-aos-delay="200">
-                <div>
-                    <label for="name" class="block mb-2">Name</label>
-                    <input type="text" id="name" class="w-full px-4 py-3 bg-dark border-b border-gold/50 focus:outline-none focus:border-gold transition-colors">
-                </div>
-                <div>
-                    <label for="email" class="block mb-2">Email</label>
-                    <input type="email" id="email" class="w-full px-4 py-3 bg-dark border-b border-gold/50 focus:outline-none focus:border-gold transition-colors">
-                </div>
-                <div>
-                    <label for="subject" class="block mb-2">Subject</label>
-                    <select id="subject" class="w-full px-4 py-3 bg-dark border-b border-gold/50 focus:outline-none focus:border-gold appearance-none transition-colors">
-                        <option>Project Inquiry</option>
-                        <option>Internship Opportunity</option>
-                        <option>Collaboration</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="message" class="block mb-2">Message</label>
-                    <textarea id="message" rows="5" class="w-full px-4 py-3 bg-dark border-b border-gold/50 focus:outline-none focus:border-gold transition-colors"></textarea>
-                </div>
-                <button type="submit" class="w-full px-6 py-3 bg-gold text-dark font-medium hover:bg-gold/80 transition-colors">
-                    Send Message
-                </button>
-            </form>
-            
-            <div class="mt-16 flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-12" data-aos="fade-up">
-                <a href="mailto:alex@designportfolio.com" class="flex items-center text-gold hover:text-gold/80 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                    alex@designportfolio.com
-                </a>
-                <a href="tel:+1234567890" class="flex items-center text-gold hover:text-gold/80 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                    </svg>
-                    +1 (234) 567-890
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-  <!-- Footer Section -->
-<footer class="bg-gradient-to-b from-gray-900 to-dark pt-16 pb-8 border-t border-gold/20">
+  <!-- Skills Section -->
+  <section id="skills" class="py-24 bg-gradient-to-br from-dark to-darker">
     <div class="container mx-auto px-6">
-        <div class="grid md:grid-cols-4 gap-12 mb-12">
-            <!-- About Column -->
-            <div data-aos="fade-up">
-                <h3 class="text-xl font-serif text-gold mb-6">Meron Degif</h3>
-                <p class="text-platinum/80 mb-6">Emerging designer creating innovative spaces with a focus on sustainability and human-centered design.</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="social-icon text-gold hover:text-gold/80" aria-label="LinkedIn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                            <rect x="2" y="9" width="4" height="12"></rect>
-                            <circle cx="4" cy="4" r="2"></circle>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-icon text-gold hover:text-gold/80" aria-label="Instagram">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-icon text-gold hover:text-gold/80" aria-label="Behance">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-icon text-gold hover:text-gold/80" aria-label="Dribbble">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+      <div class="flex flex-col items-center text-center">
+        <h2 class="text-3xl md:text-4xl font-serif mb-4 text-gold" data-aos="fade-up">
+          Technical Skills
+        </h2>
+        <p class="mb-16 max-w-2xl text-platinum/80" data-aos="fade-up" data-aos-delay="100">
+          Tools and methodologies I've mastered through academic projects and personal study
+        </p>
+      </div>
 
-            <!-- Quick Links Column -->
-            <div data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-xl font-serif text-gold mb-6">Quick Links</h3>
-                <ul class="space-y-3">
-                    <li><a href="#home" class="text-platinum/80 hover:text-gold transition-colors">Home</a></li>
-                    <li><a href="#projects" class="text-platinum/80 hover:text-gold transition-colors">Projects</a></li>
-                    <li><a href="#skills" class="text-platinum/80 hover:text-gold transition-colors">Skills</a></li>
-                    <li><a href="#education" class="text-platinum/80 hover:text-gold transition-colors">Education</a></li>
-                    <li><a href="#testimonials" class="text-platinum/80 hover:text-gold transition-colors">Testimonials</a></li>
-                    <li><a href="#contact" class="text-platinum/80 hover:text-gold transition-colors">Contact</a></li>
-                </ul>
+      <div class="flex justify-center">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl">
+          <!-- 3D Modeling Card -->
+          <div class="skill-card bg-gray-900 p-6 rounded-lg border border-gold/20 hover:border-gold/50 transition-all" data-aos="fade-up" data-aos-delay="200">
+            <div class="text-gold text-3xl mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
             </div>
+            <h3 class="text-xl font-serif mb-2">3D Modeling</h3>
+            <p class="text-platinum/80 leading-relaxed">
+              Experienced in creating precise 3D models for technical and design visualization using modern CAD tools.
+            </p>
+          </div>
 
-            <!-- Contact Info Column -->
-            <div data-aos="fade-up" data-aos-delay="200">
-                <h3 class="text-xl font-serif text-gold mb-6">Get In Touch</h3>
-                <ul class="space-y-4">
-                    <li class="flex items-start">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold mr-3 mt-1">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                        <a href="mailto:alex@designportfolio.com" class="text-platinum/80 hover:text-gold transition-colors">alex@designportfolio.com</a>
-                    </li>
-                    <li class="flex items-start">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold mr-3 mt-1">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                        </svg>
-                        <a href="tel:+1234567890" class="text-platinum/80 hover:text-gold transition-colors">+1 (234) 567-890</a>
-                    </li>
-                    <li class="flex items-start">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold mr-3 mt-1">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
-                        <span class="text-platinum/80">University of Design Excellence<br>123 Creative Ave, New York</span>
-                    </li>
-                </ul>
+          <!-- CAD Card -->
+          <div class="skill-card bg-gray-900 p-6 rounded-lg border border-gold/20 hover:border-gold/50 transition-all" data-aos="fade-up" data-aos-delay="300">
+            <div class="text-gold text-3xl mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              </svg>
             </div>
+            <h3 class="text-xl font-serif mb-2">CAD</h3>
+            <p class="text-platinum/80 leading-relaxed">
+              Proficient in using CAD software to draft accurate technical drawings and design layouts.
+            </p>
+          </div>
 
-            <!-- Newsletter Column -->
-            <div data-aos="fade-up" data-aos-delay="300">
-                <h3 class="text-xl font-serif text-gold mb-6">Stay Updated</h3>
-                <p class="text-platinum/80 mb-4">Subscribe to my newsletter for project updates and design insights.</p>
-                <form class="flex flex-col space-y-4">
-                    <input type="email" placeholder="Your email" class="px-4 py-2 bg-gray-800 border border-gold/30 focus:outline-none focus:border-gold text-platinum transition-colors">
-                    <button type="submit" class="px-4 py-2 bg-gold text-dark hover:bg-gold/80 transition-colors font-medium">Subscribe</button>
-                </form>
-                <div class="mt-6">
-                    <a href="#" class="inline-flex items-center text-gold hover:text-gold/80 transition-colors text-sm">
-                        <span>Download Resume</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                            <polyline points="7 10 12 15 17 10"></polyline>
-                            <line x1="12" y1="15" x2="12" y2="3"></line>
-                        </svg>
-                    </a>
-                </div>
+          <!-- Sustainable Design Card -->
+          <div class="skill-card bg-gray-900 p-6 rounded-lg border border-gold/20 hover:border-gold/50 transition-all" data-aos="fade-up" data-aos-delay="500">
+            <div class="text-gold text-3xl mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12" y2="17"></line>
+              </svg>
             </div>
+            <h3 class="text-xl font-serif mb-2">Sustainable Design</h3>
+            <p class="text-platinum/80 leading-relaxed">
+              Focused on eco-friendly design principles that promote efficiency and reduce environmental impact.
+            </p>
+          </div>
         </div>
-
-        <!-- Copyright & Credits -->
-        <div class="pt-8 border-t border-gold/10">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <p class="text-sm text-platinum/60 mb-4 md:mb-0">© 2023 Meron Degif Design Portfolio. All rights reserved.</p>
-                <div class="flex spaceflex-xflex-6">
-                    <a href="#" class="text-sm text-platinum/60 hover:text-gold transition-colors">Privacy Policy</a>
-                    <a href="#" class="text-sm text-platinum/60 hover:text-gold transition-colors">Terms of Service</a>
-                    <a href="#" class="text-sm text-platinum/60 hover:text-gold transition-colors">Credits</a>
-                </div>
-            </div>
-            <p class="text-xs text-center md:text-left text-platinum/40 mt-4">Designed with passion by Meron Degif | Developed by Abenezer Terefe</p>
-        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-24 bg-gray-900/40">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-serif text-center mb-4 text-gold" data-aos="fade-up">
+        Education & Achievements
+      </h2>
+      <p class="text-center mb-16 max-w-2xl mx-auto text-platinum/80" data-aos="fade-up" data-aos-delay="100">
+        My academic journey and notable accomplishments
+      </p>
+
+      <div class="max-w-3xl mx-auto">
+        <div class="relative">
+          <!-- Timeline line -->
+          <div class="absolute left-4 h-full w-0.5 bg-gold/30 top-0" data-aos="fade-up"></div>
+
+          <!-- Timeline item 1 -->
+          <div class="mb-12 pl-12 relative" data-aos="fade-up" data-aos-delay="200">
+            <div class="absolute left-0 w-8 h-8 rounded-full bg-gold border-4 border-dark flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-serif mb-2 text-gold">Level 3 Drafting Student</h3>
+            <p class="font-medium mb-1 text-platinum">General Wingate Polytechnic College | Current</p>
+            <p class="text-gold/80 mb-2">GPA: 3.8/4.0 | Dean's List all semesters</p>
+            <ul class="list-disc pl-5 text-platinum/80 space-y-1">
+              <li>Excellent academic performance with consistent top grades</li>
+              <li>Advanced skills in technical drawing and AutoCAD</li>
+              <li>Proven ability in practical project execution</li>
+              <li>Recognized for accuracy and attention to detail</li>
+              <li>Strong collaborator with excellent teamwork skills</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-24 bg-gray-900/70">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-serif text-center mb-4 text-gold">Educator Endorsements</h2>
+      <p class="text-center mb-16 max-w-2xl mx-auto text-platinum/80">Words of encouragement from my esteemed instructors at General Wingate Polytechnic</p>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <!-- Engineer Amha Belay Testimonial -->
+        <div class="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-lg border border-gold/20 hover:border-gold/50 transition-all shadow-lg">
+          <div class="flex items-center mb-6">
+            <div class="bg-gold/10 p-3 rounded-full mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-serif text-gold">Eng. Amha Belay</h3>
+              <p class="text-platinum/60">Senior Engineering Instructor</p>
+            </div>
+          </div>
+          <p class="text-platinum/80 italic mb-6 relative pl-6 before:content-['"'] before:text-gold before:text-4xl before:absolute before:left-0 before:top-0 before:opacity-30">
+            A remarkable student who consistently demonstrated exceptional technical skills and problem-solving abilities. His dedication to engineering principles and innovative approach to design challenges set him apart from his peers.
+          </p>
+          <div class="flex justify-between items-center">
+            <div class="flex items-center text-sm text-gold/80">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd" />
+                <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+              </svg>
+              General Wingate Polytechnic
+            </div>
+            <a href="tel:+251912734610" class="flex items-center text-xs text-gold hover:text-gold/60 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              +251 912 734610
+            </a>
+          </div>
+        </div>
+
+        <!-- Architect Abrham Asfaw Testimonial -->
+        <div class="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-lg border border-gold/20 hover:border-gold/50 transition-all shadow-lg">
+          <div class="flex items-center mb-6">
+            <div class="bg-gold/10 p-3 rounded-full mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-serif text-gold">Arch. Abrham Asfaw</h3>
+              <p class="text-platinum/60">Lead Architecture Instructor</p>
+            </div>
+          </div>
+          <p class="text-platinum/80 italic mb-6 relative pl-6 before:content-['"'] before:text-gold before:text-4xl before:absolute before:left-0 before:top-0 before:opacity-30">
+            An outstanding student with a rare combination of technical precision and creative vision. His architectural designs consistently showed deep understanding of sustainable principles and attention to functional details.
+          </p>
+          <div class="flex items-center text-sm text-gold/80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd" />
+            </svg>
+            General Wingate Polytechnic
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Footer Section -->
+<footer class="bg-gradient-to-b from-gray-950 to-dark pt-20 pb-12 border-t border-gold/10">
+  <div class="container mx-auto px-6">
+    <!-- Main Footer Content -->
+    <div class="grid md:grid-cols-12 gap-8 mb-16">
+      <!-- Brand Column -->
+      <div class="md:col-span-4 lg:col-span-5">
+        <div class="max-w-xs">
+          <h3 class="text-2xl font-serif text-gold mb-5">Meron Degif</h3>
+          <p class="text-platinum/80 text-lg leading-relaxed mb-6">
+            Emerging designer blending technical drafting expertise with innovative spatial solutions.
+          </p>
+          <div class="flex space-x-5">
+            <a href="https://t.me/meri_yt" class="text-gold hover:text-gold/70 transition-colors" aria-label="Telegram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.2 2.8c-1.6-1-6.3-2.3-9.4-.6-2.4 1.3-13.8 7.3-13.8 7.3s-1.2 6.1 3.4 7.2c1.7.4 3.6-.2 5.4-1.4 1.4-1 9.3-8.4 9.3-8.4s1.7 5.4-1.3 7.1c-2.3 1.3-7.6 1.9-10.2 1.1"></path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/meri.4831/" class="text-gold hover:text-gold/70 transition-colors" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="md:col-span-4 lg:col-span-3">
+        <h4 class="font-serif text-gold text-lg mb-6 uppercase tracking-wider">Navigation</h4>
+        <ul class="space-y-3">
+          <li><a href="#home" class="text-platinum/80 hover:text-gold transition-colors text-lg">Home</a></li>
+          <li><a href="#projects" class="text-platinum/80 hover:text-gold transition-colors text-lg">Projects</a></li>
+          <li><a href="#skills" class="text-platinum/80 hover:text-gold transition-colors text-lg">Skills</a></li>
+          <li><a href="#education" class="text-platinum/80 hover:text-gold transition-colors text-lg">Education</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="md:col-span-4 lg:col-span-4">
+        <h4 class="font-serif text-gold text-lg mb-6 uppercase tracking-wider">Contact</h4>
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-gold mt-1 mr-3 flex-shrink-0">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <a href="mailto:merrydege2@gmail.com" class="text-platinum/80 hover:text-gold transition-colors text-lg">merrydege2@gmail.com</a>
+          </li>
+          <li class="flex items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-gold mt-1 mr-3 flex-shrink-0">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <a href="tel:+251965485905" class="text-platinum/80 hover:text-gold transition-colors text-lg">+251 96 548 5905</a>
+          </li>
+          <li class="flex items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-gold mt-1 mr-3 flex-shrink-0">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span class="text-platinum/80 text-lg">Alem Genar, Kenterii</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gold/10 mb-8"></div>
+
+    <!-- Copyright & Bottom Row -->
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="text-platinum/60 text-sm mb-4 md:mb-0">
+        © 2024 Meron Degif. All rights reserved.
+      </p>
+      <div class="flex space-x-6">
+        <a href="#" class="text-platinum/60 hover:text-gold transition-colors text-sm">Privacy Policy</a>
+        <a href="#" class="text-platinum/60 hover:text-gold transition-colors text-sm">Terms of Service</a>
+      </div>
+    </div>
+  </div>
 </footer>
 
-    <!-- Mobile Menu (Hidden by default) -->
-    <div id="mobileMenu" class="fixed inset-0 bg-dark z-50 flex flex-col items-center justify-center space-y-8 hidden">
-        <button id="closeMenu" class="absolute top-8 right-6 text-2xl text-gold">✕</button>
-        <a href="#home" class="text-2xl text-gold hover:text-gold/80 transition-colors">Home</a>
-        <a href="#projects" class="text-2xl text-gold hover:text-gold/80 transition-colors">Projects</a>
-        <a href="#skills" class="text-2xl text-gold hover:text-gold/80 transition-colors">Skills</a>
-        <a href="#education" class="text-2xl text-gold hover:text-gold/80 transition-colors">Education</a>
-        <a href="#testimonials" class="text-2xl text-gold hover:text-gold/80 transition-colors">Testimonials</a>
-        <a href="#contact" class="text-2xl text-gold hover:text-gold/80 transition-colors">Contact</a>
-    </div>
+  <!-- Mobile Menu (Hidden by default) -->
+  <div id="mobileMenu" class="fixed inset-0 bg-dark z-50 flex flex-col items-center justify-center space-y-8 hidden">
+    <button id="closeMenu" class="absolute top-8 right-6 text-2xl text-gold">✕</button>
+    <a href="#home" class="text-2xl text-gold hover:text-gold/80 transition-colors">Home</a>
+    <a href="#projects" class="text-2xl text-gold hover:text-gold/80 transition-colors">Projects</a>
+    <a href="#skills" class="text-2xl text-gold hover:text-gold/80 transition-colors">Skills</a>
+    <a href="#education" class="text-2xl text-gold hover:text-gold/80 transition-colors">Education</a>
+    <a href="#testimonials" class="text-2xl text-gold hover:text-gold/80 transition-colors">Testimonials</a>
+    <a href="#contact" class="text-2xl text-gold hover:text-gold/80 transition-colors">Contact</a>
+  </div>
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/main.js"></script>
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS animation library
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+
+    // Mobile menu toggle functionality
+    document.querySelector('.md\\:hidden').addEventListener('click', function() {
+      document.getElementById('mobileMenu').classList.remove('hidden');
+    });
+
+    document.getElementById('closeMenu').addEventListener('click', function() {
+      document.getElementById('mobileMenu').classList.add('hidden');
+    });
+
+    // Modal functionality
+    function openModal(title, imageSrc, description, tags, year) {
+      document.getElementById('modalTitle').textContent = title;
+      document.getElementById('modalImage').src = imageSrc;
+      document.getElementById('modalDescription').textContent = description;
+      document.getElementById('modalYear').textContent = year;
+      
+      const tagsContainer = document.getElementById('modalTags');
+      tagsContainer.innerHTML = '';
+      
+      if (tags) {
+        tags.split(',').forEach(tag => {
+          const tagElement = document.createElement('span');
+          tagElement.className = 'text-xs px-3 py-1 bg-gold/10 text-gold rounded-full border border-gold/20';
+          tagElement.textContent = tag.trim();
+          tagsContainer.appendChild(tagElement);
+        });
+      }
+      
+      document.getElementById('projectModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('projectModal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Close modal when clicking outside content
+    document.getElementById('projectModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeModal();
+      }
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+          
+          // Close mobile menu if open
+          if (!document.getElementById('mobileMenu').classList.contains('hidden')) {
+            document.getElementById('mobileMenu').classList.add('hidden');
+          }
+        }
+      });
+    });
+  </script>
 </body>
-
 </html>
